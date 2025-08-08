@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Profile - BUDGETBUDDY(Personal Finance Tracker)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo"> </div>
+        <ul class="menu">
+            <li>
+                <a href="Dashboard.html">
+                    <i class="fa-solid fa-gauge"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="Expense.html">
+                    <i class="fa-solid fa-money-bills"></i>
+                    <span>Expense</span>
+                </a>
+            </li>
+            <li>
+                <a href="Savings.html">
+                    <i class="fa-solid fa-piggy-bank"></i>
+                    <span>Savings</span>
+                </a>
+            </li>
+            <li class="dash">
+                <a href="#">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+            <li class="logout">
+                <a href="">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main--content">
+        <div class="header--wrapper">
+            <div class="header--title">
+                <span>Personal Finance Tracker</span>
+                <h2>BUDGETBUDDY</h2>
+            </div>
+            <div class="user--info">
+                <div class="user--info-info">
+                    <div class="user--name">Username</div>
+                    <p>Student</p>
+                </div>
+                <img src="https://via.placeholder.com/500x500" alt="">
+            </div>
+        </div>
+        <div class="card--container">
+            <h3 class="main--title">Profile</h3>
+            <div class="__infoEDIT___wrap">
+                <div class="uploadPIC__card">
+                    <div class="infoEDIT__uploadPIC">
+                        <img src="https://via.placeholder.com/70" alt="Profile Picture" id="profile-pic">
+                        <p>Image size must be less than <span>2MB</span></p>
+                    </div>
+
+                    <label class="input-file" for="input-file"> Upload Photo</label>
+                    <input class="input-file_input" type="file" accept="image/jpeg, image/jpg, image/png," id="input-file" />
+                </div>
+
+
+                <div class="__User2Edit">
+                    <div class="holder__wrap">
+                        <div class="holder">
+                            <label for="username">Username: </label>
+                            <input type="text" id="username" name="username" placeholder="Enter username">
+                        </div>
+                        <div class="holder">
+                            <label for="email">Email: </label>
+                            <input type="email" id="email" name="email" placeholder="Enter email">
+                        </div>
+                        <div class="holder">
+                            <label for="password">Password: </label>
+                            <input type="password" id="password" name="password" placeholder="Enter password">
+                        </div>
+
+                        <div class="holder">
+                            <label for="birthdate">Birthdate: </label>
+                            <input type="date" id="birthdate" name="birthdate">
+                        </div>
+                        <div class="holder">
+                            <label for="firstname">Firstname: </label>
+                            <input type="text" id="firstname" name="firstname" placeholder="Enter firstname">
+                        </div>
+                        <div class="holder">
+                            <label for="lastname">Lastname: </label>
+                            <input type="text" id="lastname" name="lastname" placeholder="Enter lastname">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="card--wrapper">
+                <div class="balance--card">
+                    <div class="card--header">
+                        <div class="total">
+                            <label class="title" for="investment">Amount of Total Balance</label>
+                            <input class="total--value" type="number" id="investment" name="investment" placeholder="Enter amount" accept="number">
+                        </div>
+                    </div>
+                </div>
+                <div class="balance--card">
+                    <div class="card--header">
+                        <div class="total">
+                            <label class="title" for="investment">Amount of Total Savings </label>
+                            <input class="total--value" type="number" id="investment" name="investment" placeholder="Enter amount" accept="number">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="balance--card">
+                    <div class="card--header">
+                        <div class="total">
+                            <label class="title" for="investment">Amount of Total Expense</label>
+                            <input class="total--value" type="number" id="investment" name="investment" placeholder="Enter amount" accept="number">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="tabular--wrapper">
+            <h3 class="main--title">Overall Financial Tracker</h3>
+            <div class="table--container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Transaction Type</th>
+                            <th>Category</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Expense</td>
+                            <td>Grocery</td>
+                            <td>PHP 5000</td>
+                            <td>Jan-09-2023</td>
+                            <td>9:30pm</td>
+                        </tr>
+                    </tbody>
+
+                    
+                    <tbody>
+                        <tr>
+                            <td id="editableCell" contenteditable="true">
+                                <select id="transactionType" class="transaction-type">
+                                    <option value="investment">Investment</option>
+                                    <option value="expense">Expense</option>
+                                    <option value="savings">Savings</option>
+                                </select>
+                            </td>
+                            <td id="category" contenteditable="true">Type Category</td>
+                            <td id="amount" contenteditable="true">PHP 0000 </td>
+                            <td> <input type="date" id="date" name="transacdate"> </td>
+                            <td> <input type="time" id="time" name="transacdate"> </td>
+                        </tr>
+                    </tbody>
+             
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let profilePic = document.getElementById("profile-pic");
+        let inputFile = document.getElementById("input-file");
+
+        inputFile.onchange = function () {
+            const file = inputFile.files[0];
+            if (file) {
+                profilePic.src = URL.createObjectURL(file);
+            }
+        }
+
+        // Get the table where you want to add a row
+        var table = document.querySelector(".table--container table tbody");
+
+        // Get the input elements in the tableEDIT--container
+        var transactionType = document.getElementById("transactionType");
+        var category = document.getElementById("category");
+        var amount = document.getElementById("amount");
+        var date = document.getElementById("date");
+        var time = document.getElementById("time");
+
+        // Listen for changes in the transactionType dropdown
+        transactionType.onchange = function () {
+            // Create a new row and cells
+            var row = document.createElement("tr");
+            var cell1 = document.createElement("td");
+            var cell2 = document.createElement("td");
+            var cell3 = document.createElement("td");
+            var cell4 = document.createElement("td");
+            var cell5 = document.createElement("td");
+
+            // Set the text content of the cells
+            cell1.textContent = transactionType.value;
+            cell2.textContent = category.textContent;
+            cell3.textContent = amount.textContent;
+            cell4.textContent = date.value;
+            cell5.textContent = time.value;
+
+            // Append the cells to the row
+            row.appendChild(cell1);
+            row.appendChild(cell2);
+            row.appendChild(cell3);
+            row.appendChild(cell4);
+            row.appendChild(cell5);
+
+            // Append the row to the table
+            table.appendChild(row);
+
+            // Show pop-up message based on the selected transaction type
+            if (transactionType.value === "investment") {
+                alert("Good Job");
+            } else if (transactionType.value === "savings") {
+                alert("Keep up the Good work");
+            } else if (transactionType.value === "expense") {
+                alert("Please be mindful of your expense");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Expense - BUDGETBUDDY(Personal Finance Tracker)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo"> </div>
+        <ul class="menu">
+            <li>
+                <a href="Dashboard.html">
+                    <i class="fa-solid fa-gauge"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="dash">
+                <a href="#">
+                    <i class="fa-solid fa-money-bills"></i>
+                    <span>Expense</span>
+                </a>
+            </li>
+            <li>
+                <a href="Savings.html">
+                    <i class="fa-solid fa-piggy-bank"></i>
+                    <span>Savings</span>
+                </a>
+            </li>
+            <li>
+                <a href="Profile.html">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+            <li class="logout">
+                <a href="">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main--content">
+        <div class="header--wrapper">
+            <div class="header--title">
+                <span>Personal Finance Tracker</span>
+                <h2>BUDGETBUDDY</h2>
+            </div>
+            <div class="user--info">
+                <div class="user--info-info">
+                    <div class="user--name">Username</div>
+                    <p>Student</p>
+                </div>
+                <img src="https://via.placeholder.com/500x500" alt="">
+            </div>
+        </div>
+        <div class="card--container">
+            <h3 class="main--title">Expense</h3>
+            <div class="card--wrapper">
+                <div class="balance--card">
+                    <div class="card--header">
+                        <div class="amount">
+                            <span class="title">Total Expense</span>
+                            <span class="amount-value">PHP 500</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="balance--card">
+                    <div class="card--header">
+                        <div class="amount">
+                            <span class="title">Monthly Expense</span>
+                            <span class="amount-value">PHP 500</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="balance--card">
+                    <div class="card--header">
+                        <div class="amount">
+                            <span class="title">Daily Expense</span>
+                            <span class="amount-value">PHP 500</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="tabular--wrapper">
+            <h3 class="main--title">Expense Financial Transaction</h3>
+            <div class="table--container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Transaction Type</th>
+                            <th>Category</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Expense</td>
+                            <td>Grocery</td>
+                            <td>PHP 5000</td>
+                            <td>Jan-09-2023</td>
+                            <td>9:30pm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

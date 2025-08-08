@@ -1,0 +1,450 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+:root {
+    --purple: #bf78fe;
+    --dark: #333333;
+    --black: #000000;
+    --graystone: #ebe9e9;
+    --white: #ffffff;
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 120px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: linear-gradient(to right, #004aad, #bf78fe);
+}
+
+.sidebar:hover {
+    width: 24rem;
+    transition: 0.5s;
+}
+
+.logo {
+    height: 80px;
+    padding: 16px;
+}
+
+.menu {
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+    .menu li {
+        padding: 1rem;
+        margin: 8px;
+        border-radius: 8px;
+        transition: all 0.5s ease-in-out;
+    }
+
+.dash i,
+.dash span {
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu li:hover {
+    background: #e0e0e058;
+    cursor: pointer;
+}
+
+.menu a {
+    color: var(--white);
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+    .menu a span {
+        overflow: hidden;
+    }
+
+    .menu a i,
+    .dash i {
+        font-size: 1.5rem;
+    }
+
+.logout {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+/*Main Body Section on Dashboard*/
+.main--content {
+    position: relative;
+    background: var(--dark);
+    width: 100%;
+    padding: 1rem;
+}
+
+.header--wrapper img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.header--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: var(--white);
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    margin: 1rem 0rem;
+}
+
+.header--title {
+    color: var(--purple);
+}
+
+.user--info-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.user--info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--dark);
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.user--name {
+    font-size: 12px;
+    color: var(--white);
+}
+
+.user--info p {
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--purple);
+}
+
+.card--container {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.card--wrapper {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.main--title {
+    color: var(--dark);
+    padding-bottom: 10px;
+    font-size: 21px;
+}
+
+.balance--card {
+    background: var(--black);
+    padding: 1.2rem;
+    border-radius: 10px;
+    width: 350px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    justify-content: center;
+}
+
+.balance--card span {
+    color: var(--white);
+}
+
+.balance--card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.card--header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.amount {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 14px;
+    font-weight: 200;
+    color: var(--white);
+}
+
+.amount--value {
+    font-size: 24px;
+    font-family: "Courier New", Courier,monospace;
+    font-weight: 600;
+}
+.amount-invest {
+    font-size: 24px;
+    font-family: "Courier New", Courier,monospace;
+    font-weight: 600;
+}
+.amount-savings {
+    font-size: 24px;
+    font-family: "Courier New", Courier,monospace;
+    font-weight: 600;
+}
+
+.amount-expense {
+    font-size: 24px;
+    font-family: "Courier New", Courier,monospace;
+    font-weight: 600;
+}
+
+/*Account Settings Section on Profile*/
+.total {
+    display: flex;
+    flex-direction: column;
+}
+.total--value {
+    margin-top: 1rem;
+    font-size: 12px;
+    font-family: "Courier New", Courier,monospace;
+    font-weight: 600;
+    padding: 1rem;  
+}
+.uploadPIC__card {
+    width: 210px;
+    background: var(--black);
+    padding: 1rem;
+    border-radius: 2rem;
+    text-align: center;
+    justify-content: center;
+    margin-right: 1rem; 
+}
+.infoEDIT__uploadPIC {
+    width: 100%; /* Adjust this width as needed */
+    max-width: 200px; /* Set a maximum width to control the size */
+    margin: 0 auto; /* Center the content horizontally */
+    text-align: center;
+}
+.infoEDIT__uploadPIC img {
+    width: 100%; /* Make the image fill its container */
+    max-height: 200px; /* Set a maximum height to control the size */
+    border-radius: 50%; /* Keep the image round if it's a profile picture */
+}
+
+#profile-pic {
+    max-width: 100%; /* Make sure the image doesn't exceed its container */
+    max-height: 200px; /* Set a maximum height to control the size */
+    border-radius: 50%; /* Keep the image round if it's a profile picture */
+}
+.infoEDIT__uploadPIC p {
+    font-size: 10px;
+    color: white;
+}
+
+.infoEDIT__uploadPIC p span {
+    font-weight: 600;
+}
+.input-file {
+    margin-top: 8px;
+    text-align: center;
+    justify-content: center;
+    display: block;
+    width: 180px;
+    background: var(--purple);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input-file {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.input-file_input {
+    display: none;
+}
+.__infoEDIT___wrap {
+    display: grid;
+    grid-template-columns: .5fr 3fr;
+    gap: 1rem;
+}
+
+.holder {
+    display: grid;
+    grid-template-columns: .3fr 2fr;
+    padding: 6px;
+}
+
+.__User2Edit label {
+    display: flex;
+    align-items: center;
+    color: var(--purple);
+    font-size: 14px;
+}
+
+.__User2Edit input {
+    width: 100%; /* Take up the full width of the container */
+    height: 30px; /* Adjust the height to your preference */
+    padding: 8px;
+    margin: 1px 0;
+    display: inline-block;
+    border: 1px solid var(--purple);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.__User2Edit label,
+.__User2Edit input {
+    margin-bottom: 1px; /* Add some space between label-input pairs */
+}
+
+/* Optional: Style placeholders for better aesthetics */
+.__User2Edit input::placeholder {
+    width: 100%;
+    color: var(--purple);
+    opacity: 0.7;
+    font-style: italic;
+}
+
+
+/*Tabular Section on Dashboard*/
+.tabular--wrapper {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+.table--container {
+    width: 100%;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.tableEDIT--container {
+    width: 100%;
+}
+
+thead {
+    background: rgba(113, 99, 186, 255);
+    color: #ffffff;
+}
+
+th {
+    width: 250px;
+    padding: 15px;
+    text-align: left;
+}
+
+tbody {
+    background: #f2f2f2;
+}
+
+td {
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background: #ffffff;
+}
+
+tfoot {
+    background: rgba(113, 99, 186, 255);
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* For pie Chart on Dashboard page */
+.x-box__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 35vh;
+    margin: 0;
+}
+.x-box {
+    width: 35vh;
+    height: 35vh;
+    border-radius: 50%;
+    background-color: #0e8ec7;
+
+    background:repeating-conic-gradient(
+     from 0deg,
+    #004aad 0deg 180deg,
+    #bf78fe 180deg 210deg,
+    #333333 210deg 360deg
+    );
+}
+.cont-wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.i-percent {
+    color: #004aad;
+}
+.s-percent {
+    color: #bf78fe;
+}
+.e-percent {
+    color: #333333;
+}
+.x-box-cont {
+    font-size: 18px;
+    padding-left: 50px;
+}
+.x-box-cont h1{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.x-box-cont strong{
+    display: block;
+    margin-bottom: 12px;
+    font-weight: normal;
+}
+
+/* LOGOUT POP-UP */

@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> SignUp - BUDGETBUDDY(Personal Finance Tracker)</title>
+    <link rel="stylesheet" href="accStyle.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="logoTitle">
+            <img src="images/(white)LOGO-BudgetBuddy.png" alt="Logo" width="250" height="100">
+            <label for="signup" style="color: #4E2780; font-size: 2em;"><b>SIGN UP</b></label>
+        </div>
+
+
+        <form action="/action_page.php">
+
+            <input type="text" placeholder="Username" name="username" required>
+
+            <input type="text" placeholder="First Name" name="firstname" required>
+
+            <input type="text" placeholder="Last Name" name="lastname" required>
+
+            <input type="email" placeholder="Email Address" name="email" required>
+
+            <input type="password" placeholder="Password" name="password" required>
+
+            <!-- <select class="status" name="status">
+                <option value="student">Student</option>
+                <option value="youngprofessionals">Young Professionals</option>
+                <option value="employee">Employee</option>
+                <option value="other">Other</option>
+            </select>-->
+
+            <a href="Profile.html" class="btn">REGISTER</a>
+        </form>
+    </div>
+    <style>
+        .btn {
+            background-color: #4E2780;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 40%;
+            opacity: 0.9;
+            border-radius: 20px;
+        }
+
+            .btn:hover {
+                opacity: 1;
+            }
+    </style>
+</body>
+</html>

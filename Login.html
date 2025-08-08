@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> Login - BUDGETBUDDY(Personal Finance Tracker)</title>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="logoTitle">
+            <img src="images/(white)LOGO-BudgetBuddy.png" alt="Logo" width="250" height="100">
+            <label for="login" style="color: #4E2780; font-size: 2em; "><b>LOGIN</b></label>
+        </div>
+
+        <form action="/action_page.php">
+            <br>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <br>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <a href="SignUp.html" class="create-btn">Create an Account</a>
+            <br>
+            <button type="submit" class="btn" onclick="navigateToNextPage()">LOGIN</button>
+
+        </form>
+    </div>
+
+
+    <style>
+        body {
+            font-family: Poppins;
+            margin: 0;
+            padding: 0;
+            background-image: url("images/BACKGROUND.png");
+            background-position: center;
+            background-size: cover;
+            height: 100vh; /* Set the height of the body to 100% of the viewport height */
+            width: 100%; /* Set the width of the body to 100% */
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 60%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            padding: 26px;
+            background-color: white;
+            border: none;
+            border-radius: 44px;
+            text-align: center;
+        }
+
+        .logoTitle {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input[type=text], input[type=password] {
+            width: 80%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+            input[type=text]:focus, input[type=password]:focus {
+                background-color: #ddd;
+                outline: none;
+            }
+
+        .btn {
+            background-color: #4E2780;
+            color: #fff;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 40%;
+            opacity: 0.9;
+            border-radius: 20px;
+        }
+
+            .btn:hover {
+                opacity: 1;
+            }
+
+        .transparent-btn {
+            background-color: transparent;
+            border: none;
+            color: blue;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .create-btn {
+            margin: 30px 10px 30px 0;
+            background-color: transparent;
+            color: ghostwhite;
+            font-size: 12px;
+            color: #607EAA;
+        }
+    </style>
+    <script>
+        function navigateToNextPage() {
+            window.location.href = "Profile.html"; // Replace "nextpage.html" with the actual URL of the page you want to navigate to
+        }
+    </script>
+</body>
+</html>
